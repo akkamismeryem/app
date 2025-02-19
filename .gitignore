@@ -1,0 +1,12 @@
+*.bak
+*.mdf
+*.ldf
+*.log
+*.txt
+.vs/
+bin/
+obj/
+.idea/
+.vscode/
+DatabaseOfPharmacy.bak
+QueryOfDatabaseOfPharmacy.sql

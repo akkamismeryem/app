@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0C405E2-2DB3-43FA-B855-F2371FBA43F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pharmacy_console</RootNamespace>
+    <AssemblyName>pharmacy_console</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAS.Designer.cs">
+      <DependentUpon>CAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePrescription.Designer.cs">
+      <DependentUpon>CreatePrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateReport.Designer.cs">
+      <DependentUpon>CreateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseOfPharmacyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseOfPharmacyDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors.Designer.cs">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrForm.Designer.cs">
+      <DependentUpon>DrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrProfile.Designer.cs">
+      <DependentUpon>DrProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrSignUp.Designer.cs">
+      <DependentUpon>DrSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoince.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoince.Designer.cs">
+      <DependentUpon>Invoince.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicines.Designer.cs">
+      <DependentUpon>Medicines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhForm.Designer.cs">
+      <DependentUpon>PhForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhProfile.Designer.cs">
+      <DependentUpon>PhProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhSignUp.Designer.cs">
+      <DependentUpon>PhSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prescriptions.Designer.cs">
+      <DependentUpon>Prescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockInfo.Designer.cs">
+      <DependentUpon>StockInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhitePrescriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhitePrescriptions.Designer.cs">
+      <DependentUpon>WhitePrescriptions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAS.resx">
+      <DependentUpon>CAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePrescription.resx">
+      <DependentUpon>CreatePrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateReport.resx">
+      <DependentUpon>CreateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors.resx">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrForm.resx">
+      <DependentUpon>DrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrProfile.resx">
+      <DependentUpon>DrProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrSignUp.resx">
+      <DependentUpon>DrSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoince.resx">
+      <DependentUpon>Invoince.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicines.resx">
+      <DependentUpon>Medicines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhForm.resx">
+      <DependentUpon>PhForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhProfile.resx">
+      <DependentUpon>PhProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhSignUp.resx">
+      <DependentUpon>PhSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescriptions.resx">
+      <DependentUpon>Prescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockInfo.resx">
+      <DependentUpon>StockInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhitePrescriptions.resx">
+      <DependentUpon>WhitePrescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DatabaseOfPharmacyDataSet1.xsc">
+      <DependentUpon>DatabaseOfPharmacyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseOfPharmacyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseOfPharmacyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseOfPharmacyDataSet1.xss">
+      <DependentUpon>DatabaseOfPharmacyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
