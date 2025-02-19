@@ -1,23 +1,7 @@
 PharmacyManagementSystem - READ ME
 
 Running The Project
-Reconnecting the Database to SQL Server (Restore or Attach):
--------------------------------------------------- ----------------------
-a. Attach
-Open SQL Server Management Studio (SSMS).
-Right-click on Databases and select Attach.
-Click the Add button in the window that opens and select the shared .MDF file. The LDF file is found automatically.
-Add the database to SQL Server by pressing the OK button.
--------------------------------------------------------------------------
-b. Restore
-If you are going to open it with .bak file:
-Right-click on Databases and select Restore Database.
-Select Device and show the shared .bak file.
-Load the database from the backup by clicking OK.
---------------------------------------------------------------------------
-Databes Connection String : My connection string is in my system code, you can run it like this if you want.
--> "Data Source=LAPTOP-THDLSQ6F;Initial Catalog=DatabaseOfPharmacy;Integrated Security=True"
--------------------------------------------------------------------------
+
 1. Open Visual Studio or your preferred IDE.
 2. Start the application by running the login.cs file.
 3. You can use the doctor or pharmacist functions by logging in.
